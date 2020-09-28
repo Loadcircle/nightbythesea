@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapi y Jesus</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta property="og:url" content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />
+    <meta property="og:title" content="Mapi y Jesús" />
+    <meta property="og:description" content="Si me haces click te muestro una foto" />
+    <meta property="og:image" content="src/map_sola.jpg" />
+    <link rel="icon" 
+      type="image/png" 
+      href="favicon.ico">
+</head>
+<body>
+
+    <div id="introBox" class="intro_box text_center">
+        <p>Si me haces clic te muestro una foto</p>
+        <button id="fullTrigger" class="boton_trigger">Mostrar foto</button>
+    </div>
+
+    <div id="glitch" class="glitch_box">
+        <img id="firstPhoto" src="src/map_come.jpg" alt="img">
+        <div class="loader"></div>
+    </div>
+
+    <div id="fullHolder" class="text_center">
+        <h2>¡Hola! ¿por qué no bajas?</h2>
+        <div id="imgGalleryContainer" class="img_gallery_container zoom-in-up">
+            
+            <img class="img_gallery imgGallery" data-aos="zoom-in-up" src="src/map_sola.jpg" alt="img">
+            <img class="img_gallery imgGallery" data-aos="zoom-in-up" src="src/mapje1.jpg" alt="img">
+            <img class="img_gallery imgGallery" data-aos="zoom-in-up" src="src/mapje2.jpg" alt="img">
+            <img class="img_gallery imgGallery" data-aos="zoom-in-up" src="src/mapje3.jpg" alt="img">
+            <img class="img_gallery imgGallery" data-aos="zoom-in-up" src="src/map_cumple.jpg" alt="img">
+            <img class="img_gallery imgGallery" data-aos="zoom-in-up" src="src/mapje4.jpg" alt="img">
+
+        </div>
+        
+        <div id="flipOne" class="flip_one_container">
+
+            <div class="flipping_card">
+                <div class="front_card" style="background-image: url(src/map_gruñe.jpg);">
+                    <h2 class="hover_me">Hover me</h2>
+                </div>
+                <div class="back_card text_center">
+                    <h2>Santa cachucha, ya dijo la frase</h2>
+                    <p>
+                        Hola, ¿cómo estás? Te dije que no sabia que comprar y aun no se D: 
+                        <br><br>
+                        Pero te hice un regalo con lo que mejor se hacer :3 
+                        <br><br>
+                        El tiempo que he estado contigo ha sido la mejor época de mi vida, 
+                        y estoy seguro de que los que vienen serán mejores, me has hecho 
+                        extremadamente feliz por este año medio juntos y espero que sean muchos más.
+                        Aun no tenemos una canción, pero con o sin canción, esta es la que te dedico.
+                        <br><br>
+                        Te amo muchísimo Feliz año y medio 
+                        <br><br>
+                        <img class="final_img" src="src/final.jpg" alt="img">
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.21.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.21.1/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script defer src="app/app.js"></script>
+</body>
+</html>
